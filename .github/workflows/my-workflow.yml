@@ -1,6 +1,8 @@
 name: Docker Actions
 
-on: [push]
+on:
+  pull_request:
+    types: [labeled]
 
 jobs:
 
@@ -15,3 +17,6 @@ jobs:
         with:
           firstGreeting: "Learning Lab User"
           fourthGreeting: "Does it work?"
+      
+      - name: meow
+        uses: ./.github/actions/cat-facts
