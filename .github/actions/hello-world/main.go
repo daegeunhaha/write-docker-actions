@@ -11,6 +11,7 @@ func main() {
   firstGreeting := os.Getenv("INPUT_FIRSTGREETING")
   secondGreeting := os.Getenv("INPUT_SECONDGREETING")
   thirdGreeting := os.Getenv("INPUT_THIRDGREETING")
+  fourthGreeting := os.Getenv("INPUT_FOURTHGREETING")
 
   // Use those inputs in the actions logic
   fmt.Println("Hello " + firstGreeting)
@@ -20,6 +21,10 @@ func main() {
   if thirdGreeting != "" {
     fmt.Println("Hello " + thirdGreeting)
     }
+
+  if fourthGreeting != "" {
+	fmt.Println(fourthGreeting)
+  }
 
 }
 // just for commit
